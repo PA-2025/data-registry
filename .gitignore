@@ -174,5 +174,5 @@ cython_debug/
 .pypirc
 
 
-script/bensound/*.json
-script/bensound/music/
+script/scrapper/*.json
+script/scrapper/music/

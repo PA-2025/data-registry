@@ -32,7 +32,7 @@ class Main:
             self.urls = []
 
     def get_mp3_url(self, website_content: json) -> None:
-        split_content = website_content.split("cdn.bensound.com")
+        split_content = website_content.split("cdn.scrapper.com")
         for i in range(1, len(split_content)):
             extension = split_content[i].split(".")[1].split('"')[0]
             if extension == "mp3":
@@ -64,6 +64,6 @@ class Main:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python bensound.py <mode>")
+        print("Usage: python scrapper.py <mode>")
         sys.exit(1)
     main = Main()
